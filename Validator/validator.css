@@ -1,0 +1,31 @@
+.txt
+{
+	width: 25%;
+	height: 20px;
+	margin-left: 40%;
+}
+.button
+{
+	width: 8%;
+	margin-left: 48%;
+	margin-top: 2%;
+}
+.result
+{
+	color: #00b300;
+	font-size: 150%;
+	width: 26%;
+	margin-left: 47%;
+}
+.cont
+{
+	margin-top: 15%;
+	margin-left: 28%;
+	width: 50%;
+	border:2px solid grey;
+
+}
+h1
+{
+	margin-left: 44%;
+}
