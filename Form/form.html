@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="validator.js" ></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Online Form</title>
+</head>
+<body>
+
+<h2>HTML form with client side validations</h2>
+
+<form id="myForm">
+
+    <label>First name:<br>
+        <div id="error-fname"></div>
+        <input type="text" name="FirstName" id="fname" placeholder="First name" onkeyup="checkFName()" required>
+    </label>
+    <br>
+ 
+    <label>Last name:<br>
+        <div id="error-lname"></div>
+        <input type="text" name="LastName" id="lname" placeholder="Last name" onkeyup="checkLName()" required>
+    </label>
+    <br>
+ 
+    <label>EGN:<br>
+        <div id="error-egn"></div>
+        <input type="number" name="EGN" placeholder="EGN" id="egn" onkeyup="checkEgn()" required>
+        
+    </label>
+    <br>
+ 
+    <label> Age:<br><div id="error-age"></div>
+        <input type="number" name="age" id="age" onkeyup="checkAge()" placeholder="Age" required>
+    </label>
+    <br>
+ 
+    <label>Address:<br>
+        <input type="address" name="address" minlength="1" maxlength="100" placeholder="Address" required>
+    </label>
+    <br>
+ 
+    <label>Password:<br>
+    <input name="password" type="password" placeholder="Password"  id="pass1" onkeyup="checkPass(); return false;" />
+    </label>
+    <br>
+
+    <label>Confirm password:<br>
+    <input name="repeatpassword" type="password" placeholder="Confirm password" id="pass2" onkeyup="checkPass(); return false;" />
+    </label>
+    <div id="error-nwl"></div>
+
+
+   
+</form>
+</body>
+</html>
