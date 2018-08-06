@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <br>
+        <div id='calc-contain'>
+            <form name="calculator">
+
+            
+                <input readonly id="display" type="text" class="text" name="answer" />
+                <hr class="hh">
+                <input type="button" class="calc-buttonC" value="CA" onclick='clearDisplay("")' />
+                <input type="button" class="calc-buttonC" value="CL" onclick="clearLast()" />
+           
+
+                <input type="button" class="calc-button" value="1" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="2" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="3" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="+" onclick="addOperand(this.value)" />
+            
+                <input type="button" class="calc-button" value="-" onclick="addOperand(this.value)" />
+                <input type="button" class="calc-button" value="4" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="5" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="6" onclick="addNumber(this.value)" />
+                
+                <input type="button" class="calc-button" value="*" onclick="addOperand(this.value)" />
+                
+                <input type="button" class="calc-button" value="/" onclick="addOperand(this.value)" />
+                <input type="button" class="calc-button" value="7" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="8" onclick="addNumber(this.value)" />
+                
+                
+            
+                <input type="button" class="calc-button" value="9" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="0" onclick="addNumber(this.value)" />
+                <input type="button" class="calc-button" value="=" onclick="equal()"/>
+                
+
+            </form>
+        </div>
+        <script type="text/javascript" src="calculator.js"></script>
+    </body>
+</html>
